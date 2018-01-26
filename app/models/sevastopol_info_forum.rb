@@ -25,7 +25,7 @@ module SevastopolInfoForum
       # go to login page
       @driver.navigate.to HREF_LOGIN
 
-      # fill username
+      # fill username 
       element = Response::find(@driver, 300, name: 'username')
       element.send_keys @login
 
